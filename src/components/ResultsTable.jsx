@@ -1,17 +1,17 @@
 export default function ResultsTable() {
   return (
-    <table id="result" >
+    <table id="result">
       <thead className="center">
         <tr>
-          <th scope="col">Year</th>
-          <th scope="col">Investment Value</th>
-          <th scope="col">Interest (Year)</th>
-          <th scope="col">Total Interest</th>
-          <th scope="col">Interest Capital</th>
+          <th>Year</th>
+          <th>Investment Value</th>
+          <th>Interest (Year)</th>
+          <th>Total Interest</th>
+          <th>Interest Capital</th>
         </tr>
       </thead>
 
-      <tbody className="center">
+      <tbody>
         <tr>
           <td>1</td>
           <td>2</td>
