@@ -1,7 +1,7 @@
-export default function ResultsTable() {
+export default function ResultsTable({ userInput }) {
   return (
-    <table id="result">
-      <thead className="center">
+    <table id='result'>
+      <thead className='center'>
         <tr>
           <th>Year</th>
           <th>Investment Value</th>
