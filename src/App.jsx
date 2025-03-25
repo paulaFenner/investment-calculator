@@ -16,7 +16,7 @@ export default function App() {
     setUserInputState((prevUserInput) => {
       return {
         ...prevUserInput,
-        [inputIdentifier]: newValue,
+        [inputIdentifier]: +newValue,
       };
     });
   }
