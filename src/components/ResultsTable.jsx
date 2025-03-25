@@ -9,7 +9,7 @@ export default function ResultsTable({ userInput }) {
 
   return (
     <table id='result'>
-      <thead className='center'>
+      <thead>
         <tr>
           <th>Year</th>
           <th>Investment Value</th>
