@@ -12,13 +12,13 @@ export default function App() {
     duration: 10,
   });
 
-  const inputIsValid = userInputState.duration >= 1;
+  // const inputIsValid = userInputState.duration >= 1;
 
   function handleChange(inputIdentifier, newValue) {
     setUserInputState((prevUserInput) => {
       return {
         ...prevUserInput,
-        [inputIdentifier]: +newValue,
+        [inputIdentifier]: newValue,
       };
     });
   }
@@ -30,10 +30,11 @@ export default function App() {
         onChange={handleChange}
         userInput={userInputState}
       />
-      {!inputIsValid && (
+      {/* {!inputIsValid && (
         <p className='center'>Please enter a duration greater than zero.</p>
       )}
-      {inputIsValid && <ResultsTable userInput={userInputState} />}
+      {inputIsValid &&  */}
+      <ResultsTable userInput={userInputState} />
     </>
   );
 }
