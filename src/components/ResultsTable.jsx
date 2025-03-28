@@ -6,7 +6,7 @@ export default function ResultsTable({ userInput }) {
   calculateInvestmentResults(userInput, results);
   const initialInvestment =
     results[0].valueEndOfYear -
-    resultsData[0].interest -
+    results[0].interest -
     results[0].annualInvestment;
 
   return (
