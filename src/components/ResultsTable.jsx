@@ -4,6 +4,10 @@ export default function ResultsTable({ userInput }) {
   const results = [];
   // const resultsData = calculateInvestmentResults(userInput);
   calculateInvestmentResults(userInput, results);
+
+  if (results.length === 0) {
+    return <p className='center'>Invalid input data provided.</p>;
+  }
   const initialInvestment =
     results[0].valueEndOfYear -
     results[0].interest -
